@@ -1,135 +1,22 @@
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>大阪・京都4天3夜｜電子行程手冊</title>
-<meta name="description" content="大阪京都4天3夜完整電子手冊：交通轉乘、餐廳、備案、海遊館版與住吉大社版。">
-<style>
-:root{--ink:#302934;--muted:#716a73;--rose:#dca9bd;--rose2:#f7e7ee;--lav:#ece7f5;--cream:#fffaf5;--gold:#b8893d;--green:#227a65;--blue:#3575a8;--line:#e9e1e5;--white:#fff;--shadow:0 12px 35px rgba(68,45,57,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}
-a{color:inherit}.hero{padding:52px 20px 34px;background:linear-gradient(135deg,#eabccc 0%,#efe9f8 55%,#fff2dc 100%);text-align:center}.hero .eyebrow{font-size:13px;letter-spacing:.18em;font-weight:800;color:#684c5b}.hero h1{margin:8px 0 6px;font-size:clamp(30px,8vw,48px);line-height:1.18}.hero p{margin:6px auto;max-width:700px}.hotel{display:inline-flex;gap:8px;align-items:center;background:#ffffffb8;border:1px solid #fff;border-radius:999px;padding:9px 14px;margin-top:12px;font-weight:700}.sticky{position:sticky;top:0;z-index:30;background:#fffefdf2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);overflow-x:auto}.nav{display:flex;gap:8px;max-width:1040px;margin:auto;padding:10px 14px;min-width:max-content}.nav a,.nav button{border:0;text-decoration:none;background:var(--lav);padding:9px 13px;border-radius:999px;font-weight:800;cursor:pointer}.wrap{max-width:1040px;margin:auto;padding:18px 14px 100px}.notice{background:#fff6d9;border:1px solid #efd38a;padding:14px 16px;border-radius:14px;margin:10px 0 20px}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.mini{background:#fff;border-radius:16px;padding:15px;box-shadow:var(--shadow);border-top:5px solid var(--rose)}.mini b{display:block}.section{margin:30px 0}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 13px}.section-title .num{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:var(--ink);color:#fff;font-weight:900}.day{background:#fff;border-radius:22px;box-shadow:var(--shadow);overflow:hidden;margin:18px 0}.dayhead{padding:20px;background:linear-gradient(120deg,var(--rose2),var(--lav))}.dayhead h2{margin:0 0 5px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.chip{font-size:13px;font-weight:800;background:#fff9;border-radius:999px;padding:5px 9px}.timeline{padding:8px 18px 18px}.stop{position:relative;display:grid;grid-template-columns:88px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}.stop:last-child{border-bottom:0}.clock{font-weight:900;color:#7a4058}.stop h3{margin:0 0 5px;font-size:18px}.stop p{margin:4px 0}.route{margin-top:10px;background:#f7f8fb;border-left:5px solid var(--blue);padding:12px 13px;border-radius:10px}.route b{color:#265c83}.route ol{margin:7px 0 0;padding-left:21px}.meta{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0}.pill{background:#f2edf2;border-radius:999px;padding:4px 9px;font-size:13px;font-weight:700}.food{margin-top:10px;background:#fff7e8;border:1px solid #efdcb6;border-radius:12px;padding:12px}.food strong{color:#875b18}.backup{margin-top:10px;background:#edf8f4;border:1px solid #b9dfd3;border-radius:12px;padding:12px}.warning{margin-top:10px;background:#fff0ef;border:1px solid #efc5c1;border-radius:12px;padding:12px}.maplink{display:inline-block;margin-top:9px;text-decoration:none;background:#355f92;color:#fff;padding:8px 11px;border-radius:10px;font-weight:800;font-size:14px}.switchbox{background:#fff;border-radius:22px;padding:20px;box-shadow:var(--shadow)}.tabs{display:flex;gap:10px;flex-wrap:wrap}.tab{border:2px solid var(--rose);background:#fff;padding:11px 15px;border-radius:13px;font-weight:900;cursor:pointer}.tab.active{background:var(--ink);border-color:var(--ink);color:#fff}.plan{display:none}.plan.active{display:block}.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.compare>div{border:1px solid var(--line);border-radius:14px;padding:14px}.accordion{border:1px solid var(--line);border-radius:14px;margin:10px 0;overflow:hidden}.accordion summary{cursor:pointer;font-weight:900;padding:14px;background:#fbf8fa}.accordion>div{padding:0 14px 14px}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.check{background:#fff;border-radius:14px;padding:13px;border:1px solid var(--line)}.footer-action{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fffffff2;border-top:1px solid var(--line);padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:center;gap:9px}.footer-action button{border:0;border-radius:12px;padding:12px 15px;font-weight:900;cursor:pointer}.linebtn{background:#06c755;color:#fff}.savebtn{background:var(--ink);color:#fff}.topbtn{background:var(--lav)}textarea{width:100%;min-height:100px;border:1px solid #ccc;border-radius:12px;padding:12px;font:inherit}.source{font-size:13px;color:var(--muted)}
-@media(max-width:760px){.overview{grid-template-columns:1fr 1fr}.stop{grid-template-columns:70px 1fr;gap:10px}.compare,.checklist{grid-template-columns:1fr}.hero{padding-top:38px}.timeline{padding-left:14px;padding-right:14px}}
-@media(max-width:430px){.overview{grid-template-columns:1fr}.stop{grid-template-columns:1fr}.clock{background:var(--rose2);display:inline-block;width:max-content;padding:3px 8px;border-radius:8px}.footer-action button{font-size:13px;padding:11px 10px}}
-@media print{.sticky,.footer-action,.tabs{display:none!important}.wrap{max-width:none}.day,.switchbox,.mini{box-shadow:none;break-inside:avoid}.plan{display:block!important}}
-</style>
-</head>
-<body>
-<header class="hero" id="top">
-  <div class="eyebrow">DELIA & BOYFRIEND · 2026</div>
-  <h1>大阪・京都 4天3夜<br>完整電子行程手冊</h1>
-  <p>9/29（二）—10/2（五）｜海鮮、USJ、暗殺教室場景、京都老街與大阪街道</p>
-  <div class="hotel">🏨 Richmond Hotel Namba Daikokucho</div>
-</header>
-<nav class="sticky"><div class="nav">
-  <a href="#arrival">抵達教學</a><a href="#day1">DAY 1</a><a href="#day2">DAY 2</a><a href="#day3">DAY 3</a><a href="#day4">DAY 4雙版本</a><a href="#return">回機場</a><a href="#check">清單</a>
-</div></nav>
-<main class="wrap">
-<div class="notice"><b>使用方式：</b>這個網站就是旅行手冊。每一段都標示搭車方向、轉乘、預估車程、步行與備案。交通時間為一般狀況估算；USJ開園、表演、餐點與臨時停駛，請於出發前7–10天再核對官方資訊。</div>
-<section class="overview">
- <div class="mini"><b>DAY 1</b>機場 → 海鮮 → 動漫街 → 道頓堀</div>
- <div class="mini"><b>DAY 2</b>USJ 哈利波特＋侏羅紀＋表演</div>
- <div class="mini"><b>DAY 3</b>京都老街＋暗殺教室＋伴手禮</div>
- <div class="mini"><b>DAY 4</b>可選海遊館版／住吉大社版</div>
-</section>
-
-<section class="section" id="arrival">
- <div class="section-title"><span class="num">0</span><h2>抵達關西機場：照著做就好</h2></div>
- <div class="day"><div class="dayhead"><h2>IT210 10:25 抵達 KIX T1 → Richmond</h2><div class="chips"><span class="chip">大行李首選 Rapi:t</span><span class="chip">難波後計程車最省力</span></div></div>
- <div class="timeline">
-  <div class="stop"><div class="clock">10:25</div><div><h3>下飛機 → 入境審查</h3><p>跟著 <b>Arrivals／到着 → Immigration／入国審査</b>。準備護照與 Visit Japan Web QR。</p><div class="meta"><span class="pill">約25–45分</span></div></div></div>
-  <div class="stop"><div class="clock">11:05</div><div><h3>領行李 → 海關</h3><p>看螢幕找 IT210 的行李轉盤。領到 26吋與30/32吋行李後，先檢查輪子與拉桿，再通過 Customs／税関。</p><div class="warning"><b>行李異常：</b>不要先離開行李區，直接找航空公司或 Baggage Service。</div></div></div>
-  <div class="stop"><div class="clock">11:45</div><div><h3>走到南海電鐵</h3><div class="route"><b>機場內步驟｜約8–12分</b><ol><li>入境大廳找 <b>Railways／鉄道</b></li><li>上2樓，通過連接空橋</li><li>到関西空港駅後找 <b>NANKAI／南海電鉄</b>，不要進JR</li></ol></div></div></div>
-  <div class="stop"><div class="clock">12:00</div><div><h3>買 Rapi:t 指定席到南海難波</h3><p>售票時出示：<b>なんばまで、ラピート、大人2名お願いします。</b></p><div class="meta"><span class="pill">最快約34分</span><span class="pill">全車指定席</span></div><div class="backup"><b>備案：</b>若下一班 Rapi:t 等太久，搭 Airport Express／空港急行，約45分、無指定席。</div></div></div>
-  <div class="stop"><div class="clock">約13:00</div><div><h3>南海難波 → 飯店</h3><div class="route"><b>推薦：計程車｜車程約5–10分</b><ol><li>下車後跟 <b>Exit／Taxi</b>，優先搭電梯</li><li>出示：リッチモンドホテルなんば大国町</li><li>地址：大阪市浪速区敷津東1-8-31</li></ol></div><div class="backup"><b>省錢版：</b>走到 Osaka Metro 御堂筋線難波站，搭往 <b>なかもず</b> 方向一站至大國町 M21；1號出口到飯店約5分鐘。第一次帶兩只大箱不優先。</div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Nankai+Namba+Station&destination=Richmond+Hotel+Namba+Daikokucho&travelmode=driving">Google Maps｜南海難波→飯店</a></div></div>
- </div></div>
-</section>
-
-<section class="day" id="day1"><div class="dayhead"><h2>DAY 1｜海鮮、動漫街與道頓堀</h2><p>抵達後不跨區亂跑；先吃、再逛、回飯店休息，晚上看大阪夜景。</p><div class="chips"><span class="chip">約10,000–14,000步</span><span class="chip">下午可縮短</span></div></div><div class="timeline">
- <div class="stop"><div class="clock">13:15</div><div><h3>飯店寄放行李</h3><p>若房間尚未能入住，先寄放行李、上洗手間、裝水。</p></div></div>
- <div class="stop"><div class="clock">13:30</div><div><h3>前往黑門市場吃海鮮丼</h3><div class="route"><b>飯店 → 日本橋站｜約18–25分</b><ol><li>步行約5分到大國町站</li><li>搭御堂筋線往 <b>箕面萱野／新大阪</b> 方向</li><li>難波站下車，轉千日前線往 <b>南巽</b></li><li>日本橋站下車，步行約5–8分到黑門市場</li></ol></div><div class="food"><strong>午餐首選：</strong>綜合海鮮丼，目標有鮪魚、鮭魚、干貝、甜蝦、白身魚；每人約¥1,800–3,000。排隊超過30分鐘就換附近備選，不為名店浪費第一天。</div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Richmond+Hotel+Namba+Daikokucho&destination=Kuromon+Ichiba+Market&travelmode=transit">Google Maps｜飯店→黑門市場</a></div></div>
- <div class="stop"><div class="clock">14:30</div><div><h3>黑門市場輕逛</h3><p>只挑一樣現場看中的小食；海鮮丼吃飽就不用硬吃。</p><div class="meta"><span class="pill">停留35–45分</span></div></div></div>
- <div class="stop"><div class="clock">15:15</div><div><h3>日本橋電電城／Ota Road</h3><div class="route"><b>黑門市場 → Ota Road｜步行約10–15分</b><ol><li>沿堺筋往南</li><li>經日本橋電電城進入動漫、模型與二手商品街區</li></ol></div><p>找《咒術迴戰》《暗殺教室》《鬼滅之刃》《航海王》《火影忍者》《進擊的巨人》周邊。</p><div class="backup"><b>疲累版：</b>停留30–40分鐘，只逛1–2間店，直接回飯店。</div></div></div>
- <div class="stop"><div class="clock">16:35</div><div><h3>回飯店入住休息</h3><div class="route"><b>Ota Road → 飯店｜步行約15–20分，或計程車5–8分</b></div><p>至少休息30分鐘，洗臉、補水、整理戰利品。</p></div></div>
- <div class="stop"><div class="clock">18:10</div><div><h3>法善寺橫丁 → 道頓堀</h3><div class="route"><b>飯店 → 法善寺｜約18–25分</b><ol><li>大國町站搭御堂筋線往箕面萱野方向</li><li>難波站下車，依出口導航步行約8–12分</li></ol></div><p>順序：水掛不動尊 → 法善寺石板巷 → 道頓堀河岸 → 戎橋 → 固力果。</p><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Hozenji+Yokocho&destination=Glico+Running+Man&waypoints=Dotonbori&travelmode=walking">Google Maps｜法善寺→道頓堀</a></div></div>
- <div class="stop"><div class="clock">19:45</div><div><h3>大阪燒晚餐</h3><div class="food"><strong>點法：</strong>豬肉大阪燒＋海鮮大阪燒或炒麵，桌上鐵板保溫、兩人分食。每人約¥1,500–2,500。晚餐後還吃得下，再買一份經典醬汁章魚燒。</div><div class="backup"><b>備案：</b>若名店排超過30分鐘，直接選附近有座位、桌上鐵板的店。</div></div></div>
-</div></section>
-
-<section class="day" id="day2"><div class="dayhead"><h2>DAY 2｜USJ 電影世界完整一天</h2><p>開園前60–90分鐘抵達；哈利波特至少2小時，侏羅紀乘船遊必排，表演優先於刺激設施。</p><div class="chips"><span class="chip">早餐前晚買好</span><span class="chip">當日園區時間需更新</span><span class="chip">夜間短看即離園</span></div></div><div class="timeline">
- <div class="stop"><div class="clock">依開園倒推</div><div><h3>飯店 → Universal City</h3><div class="route"><b>標準轉乘｜約35–45分＋步行</b><ol><li>步行約5分到大國町站</li><li>搭御堂筋線往 <b>箕面萱野／新大阪</b>，難波下車</li><li>在難波轉阪神難波線，搭往 <b>尼崎／神戶三宮</b> 方向</li><li>西九條站下車，依指標轉 JR ゆめ咲線</li><li>搭往 <b>桜島</b> 方向，Universal City 下車</li><li>出站跟人流步行約5分到入口</li></ol></div><div class="warning"><b>防搭錯：</b>阪神線到西九條後才轉 JR；JR月台確認列車往桜島，下一站序列會包含 Universal City。</div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Richmond+Hotel+Namba+Daikokucho&destination=Universal+Studios+Japan&travelmode=transit">Google Maps｜飯店→USJ</a></div></div>
- <div class="stop"><div class="clock">入園後</div><div><h3>第一優先依 Express Pass 時段走</h3><p>Express Pass 先看9/30實際販售組合，優先含哈利波特＋Jurassic Park – The Ride。沒有買快速通關時，再依App等待時間安排。</p></div></div>
- <div class="stop"><div class="clock">上午</div><div><h3>哈利波特園區</h3><p>城堡與活米村街景 → 主題設施 → 商店與代表合照。至少留2小時。</p><div class="food"><strong>午餐：</strong>三根掃帚。兩人點不同主餐交換吃：一份英式派／燉肉類＋一份口味穩、份量適中的餐點。限定甜點優先選哈利波特造型。</div></div></div>
- <div class="stop"><div class="clock">下午</div><div><h3>侏羅紀園區＋表演</h3><p><b>Jurassic Park – The Ride 必排。</b>其餘以街頭演出、遊行、角色互動與等待時間為主，不為刺激雲霄飛車犧牲節奏。</p><div class="backup"><b>下雨版：</b>雨勢大時先排室內設施、餐廳和商店；乘船遊依官方運作狀態調整。</div></div></div>
- <div class="stop"><div class="clock">傍晚</div><div><h3>看一小段萬聖節夜間氣氛</h3><p>不一路撐到閉園。避開驚嚇度高的動線，看一段燈光或表演、拍夜景後離園。</p></div></div>
- <div class="stop"><div class="clock">離園後</div><div><h3>回難波吃宵夜／疲累直接回飯店</h3><div class="route"><b>Universal City → 大國町｜約35–45分</b><ol><li>JRゆめ咲線到西九條</li><li>轉阪神難波線到大阪難波</li><li>走到大阪Metro難波站，御堂筋線往なかもず一站到大國町</li></ol></div><div class="food"><strong>正常版：</strong>難波吃拉麵或丼飯。<br><strong>疲累版：</strong>直接回飯店，便利商店買飯糰、熱食、湯品。</div></div></div>
-</div></section>
-
-<section class="day" id="day3"><div class="dayhead"><h2>DAY 3｜京都老街＋《暗殺教室》場景</h2><p>二年坂、三年坂、八坂塔與祇園町屋；京都玩得順就留到晚餐，不硬趕回大阪。</p><div class="chips"><span class="chip">電車＋步行為主</span><span class="chip">必要時短程計程車</span><span class="chip">伴手禮沿途買</span></div></div><div class="timeline">
- <div class="stop"><div class="clock">07:00前後</div><div><h3>飯店 → 京都河原町</h3><div class="route"><b>建議路線｜約65–80分</b><ol><li>大國町站搭御堂筋線往箕面萱野／新大阪方向</li><li>梅田站下車，跟 <b>阪急電車 Hankyu</b> 標示步行到大阪梅田站</li><li>搭阪急京都線特急往 <b>京都河原町</b></li><li>京都河原町下車</li></ol></div><div class="warning"><b>轉乘重點：</b>大阪Metro梅田站與阪急大阪梅田站不是同一月台，需跟阪急標示步行約8–12分鐘。</div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Richmond+Hotel+Namba+Daikokucho&destination=Kyoto-Kawaramachi+Station&travelmode=transit">Google Maps｜飯店→京都河原町</a></div></div>
- <div class="stop"><div class="clock">抵達後</div><div><h3>坐下吃日式早餐</h3><div class="food"><strong>首選型態：</strong>烤魚、白飯、味噌湯的完整和早餐；其次為玉子燒、茶粥或和定食。店家以早上營業、順路、不排太久為準。</div></div></div>
- <div class="stop"><div class="clock">09:00</div><div><h3>上坡改用短程計程車，再一路往下走</h3><div class="route"><b>京都河原町 → 八坂塔／清水周邊｜計程車約10–15分</b><p>雖然平常以步行為主，但這一段用計程車跳過長上坡，能保留腰力與拍照體力。</p></div></div></div>
- <div class="stop"><div class="clock">09:20</div><div><h3>八坂塔 → 三年坂 → 二年坂</h3><p>特別保留《暗殺教室》修學旅行場景對照角度。現場人多時，先拍街景，再找不擋店家與住戶的合照位置。</p><div class="meta"><span class="pill">約90–120分</span><span class="pill">石板坡，穿止滑鞋</span></div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Yasaka+Pagoda&destination=Ninenzaka&waypoints=Sannenzaka&travelmode=walking">Google Maps｜八坂塔→三年坂→二年坂</a></div></div>
- <div class="stop"><div class="clock">11:45</div><div><h3>京都午餐</h3><div class="food"><strong>首選：</strong>京都風壽司／鯖魚壽司；若排隊太久或不想吃冷食，改蕎麥麵或烏龍麵。每人約¥1,500–3,000。</div></div></div>
- <div class="stop"><div class="clock">13:00</div><div><h3>花見小路 → 祇園白川</h3><div class="route"><b>步行約20–30分，途中邊逛邊休息</b><ol><li>二年坂往八坂神社方向下行</li><li>經石塀小路周邊與八坂神社</li><li>再往花見小路、祇園白川</li></ol></div><p>以町屋街道與河岸景色為主；體力夠才加鴨川短散步。</p></div></div>
- <div class="stop"><div class="clock">下午</div><div><h3>京都伴手禮</h3><div class="food"><strong>同事分送：</strong>獨立包裝、常溫、不易碎的八橋或茶點。<br><strong>家人精緻款：</strong>京都感明顯的和菓子、抹茶／焙茶禮盒。沿途只挑2–3間順路店，不追排隊爆店。</div></div></div>
- <div class="stop"><div class="clock">16:00後</div><div><h3>兩套晚餐與回程</h3><div class="compare"><div><b>京都延長版</b><p>在祇園／河原町吃燒肉或壽喜燒，再搭阪急回大阪。和牛以CP值為主，理想每人¥4,000–6,000，真的值得才提高。</p></div><div><b>提早回大阪版</b><p>京都河原町搭阪急特急回大阪梅田，再依店址逛KITH或CDG其中最順的一間，接大阪燒肉。</p></div></div><div class="backup"><b>京都回飯店：</b>阪急京都河原町 → 大阪梅田，步行轉Metro梅田 → 御堂筋線往なかもず → 大國町。</div></div></div>
-</div></section>
-
-<section class="section" id="day4"><div class="section-title"><span class="num">4</span><h2>最後一天：兩個完整版本自由選</h2></div>
-<div class="switchbox">
- <div class="tabs"><button class="tab active" data-plan="aquarium">A｜海遊館版</button><button class="tab" data-plan="street">B｜住吉大社＋街道版</button></div>
- <div class="compare"><div><b>海遊館版適合</b><p>非常喜歡水族館、想用室內行程避熱避雨，願意支付門票並減少大阪街道。</p></div><div><b>街道版適合</b><p>不想再花門票，想看神社、路面電車、住宅街與新世界復古大阪。</p></div></div>
- <div class="plan active" id="plan-aquarium">
-  <div class="day"><div class="dayhead"><h2>DAY 4A｜海遊館＋機場</h2></div><div class="timeline">
-   <div class="stop"><div class="clock">08:30</div><div><h3>早餐、退房、寄放行李</h3><p>飯店附近坐下吃日式早餐；10:00前退房並寄放兩只行李。</p></div></div>
-   <div class="stop"><div class="clock">10:00</div><div><h3>大國町 → 大阪港站</h3><div class="route"><b>約35–45分</b><ol><li>大國町站搭御堂筋線往箕面萱野／新大阪方向</li><li>本町站下車，跟綠色中央線標示轉乘</li><li>中央線搭往 <b>夢洲</b> 方向</li><li>大阪港站下車，1號出口方向步行約8–10分到海遊館</li></ol></div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Richmond+Hotel+Namba+Daikokucho&destination=Osaka+Aquarium+Kaiyukan&travelmode=transit">Google Maps｜飯店→海遊館</a></div></div>
-   <div class="stop"><div class="clock">11:00</div><div><h3>海遊館</h3><p>建議停留2–2.5小時。依預約入場時段調整，先看主水槽與喜歡的區域，不逛到拖延返程。</p><div class="backup"><b>備案：</b>若入場時段太晚、門票售罄或天氣很好想走街道，直接切換B版。</div></div></div>
-   <div class="stop"><div class="clock">13:30</div><div><h3>天保山周邊午餐</h3><div class="food"><strong>方向：</strong>拉麵、丼飯或定食，每人約¥1,000–2,000。避免排超過20分鐘。</div></div></div>
-   <div class="stop"><div class="clock">14:30</div><div><h3>回飯店領行李</h3><div class="route"><b>大阪港 → 大國町｜約35–45分</b><ol><li>中央線往長田方向到本町</li><li>轉御堂筋線往なかもず方向</li><li>大國町下車，步行回飯店</li></ol></div></div></div>
-   <div class="stop"><div class="clock">16:00前後</div><div><h3>前往關西機場</h3><p>依下方「回機場」標準版執行。目標約17:00–17:30抵達KIX，保留晚餐與辦理登機時間。</p></div></div>
-  </div></div>
- </div>
- <div class="plan" id="plan-street">
-  <div class="day"><div class="dayhead"><h2>DAY 4B｜住吉大社＋阪堺電車街景＋新世界</h2></div><div class="timeline">
-   <div class="stop"><div class="clock">08:30</div><div><h3>早餐、退房、寄行李</h3><p>依路線選能坐下吃的日式早餐；有順路市場魚料理可選，但不繞路排隊。</p></div></div>
-   <div class="stop"><div class="clock">09:45</div><div><h3>飯店 → 住吉大社</h3><div class="route"><b>約30–40分</b><ol><li>步行或搭Metro一站到南海難波站周邊</li><li>進南海難波站，搭南海本線普通或準急往和歌山市／關西機場方向</li><li><b>住吉大社站</b>下車</li><li>步行約3–5分到住吉大社入口</li></ol></div><div class="warning"><b>防搭錯：</b>確認列車有停「住吉大社」。特急 Rapi:t、部分急行不停，看到列車類別先核對停靠站。</div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Richmond+Hotel+Namba+Daikokucho&destination=Sumiyoshi+Taisha&travelmode=transit">Google Maps｜飯店→住吉大社</a></div></div>
-   <div class="stop"><div class="clock">10:30</div><div><h3>住吉大社精華30–40分鐘</h3><p>入口、反橋、主要社殿外觀與參道。不是深度宗教參拜，不硬走完整區域。</p></div></div>
-   <div class="stop"><div class="clock">11:10</div><div><h3>拍阪堺電車穿過街道</h3><p>以住吉鳥居前／住吉周邊為拍攝點。先拍車與住宅街畫面，班次與體力剛好才搭一小段。</p><div class="meta"><span class="pill">停留20–30分</span></div></div></div>
-   <div class="stop"><div class="clock">11:45</div><div><h3>住吉 → 新世界</h3><div class="route"><b>約25–35分</b><ol><li>回住吉大社站搭南海本線往難波方向</li><li>新今宮站下車</li><li>依通天閣／新世界方向步行約8–12分</li></ol></div><a class="maplink" target="_blank" href="https://www.google.com/maps/dir/?api=1&origin=Sumiyoshi+Taisha&destination=Tsutenkaku&travelmode=transit">Google Maps｜住吉大社→新世界</a></div></div>
-   <div class="stop"><div class="clock">12:30</div><div><h3>新世界午餐＋街景</h3><div class="food"><strong>首選：</strong>拉麵或定食；排隊短、可坐下休息。炸串只是備選。午餐後看通天閣外圍、ジャンジャン橫丁，控制總停留約90分鐘。</div></div></div>
-   <div class="stop"><div class="clock">14:15</div><div><h3>回飯店、補買30–45分鐘</h3><div class="route"><b>新世界 → 飯店｜約15–25分</b><ol><li>可從動物園前站搭御堂筋線往箕面萱野方向</li><li>大國町站下車，回飯店領行李</li></ol></div><p>只補買遺漏的伴手禮或零食，不逛大型商場。</p></div></div>
-   <div class="stop"><div class="clock">16:00前後</div><div><h3>前往關西機場</h3><p>執行下方標準版。若前面延誤，直接刪除補買時間。</p></div></div>
-  </div></div>
- </div>
- <h3>男朋友選哪個？</h3><div class="tabs"><button class="tab choose" data-choice="DAY4 海遊館版">選海遊館版</button><button class="tab choose" data-choice="DAY4 住吉大社街道版">選街道版</button><button class="tab choose" data-choice="兩版都可以，當天決定">兩版都可以</button></div>
-</div></section>
-
-<section class="section" id="return"><div class="section-title"><span class="num">✈</span><h2>回關西機場：標準版與行李太多版</h2></div>
-<div class="day"><div class="timeline">
- <div class="stop"><div class="clock">建議16:00</div><div><h3>離開飯店</h3><p>21:05班機，目標17:00–17:30抵達KIX。若尚未線上辦理、要退稅或托運人潮大，提早出發。</p></div></div>
- <div class="stop"><div class="clock">標準版</div><div><h3>大國町 → 難波 → 南海難波</h3><div class="route"><b>約20–30分，轉乘步行可能較長</b><ol><li>飯店步行約5分到大國町站</li><li>御堂筋線往 <b>箕面萱野／新大阪</b> 方向，一站到難波</li><li>下車後跟 <b>Nankai／南海電鉄</b> 標示走</li><li>大型難波站內步行預留10–15分，不要跟JR或近鐵走</li><li>買 Rapi:t 指定席或搭空港急行</li></ol></div><div class="warning"><b>你們有大行李：</b>轉乘途中以電梯為主。若地下通道開始混亂，立刻改計程車，不必硬撐。</div></div></div>
- <div class="stop"><div class="clock">省力版</div><div><h3>飯店 → 計程車 → 南海難波</h3><p>行李變多、腰不舒服或下雨時，直接搭計程車到南海難波站。車程通常約5–10分鐘，再搭 Rapi:t 最快約34分鐘到KIX。</p></div></div>
- <div class="stop"><div class="clock">KIX</div><div><h3>報到、托運、安檢與晚餐</h3><p>先確認 Tigerair Taiwan 櫃檯與航廈。時間充裕再吃正式晚餐；一般狀況買便當、飯糰、甜點或飲料；偏緊就先完成安檢與出境。</p></div></div>
-</div></div></section>
-
-<section class="section" id="check"><div class="section-title"><span class="num">✓</span><h2>出發前更新與攜帶清單</h2></div>
-<div class="checklist">
- <div class="check"><b>USJ 出發前7–10天</b><br>開園時間、表演時刻、Express Pass、侏羅紀設施運作、限定甜點。</div>
- <div class="check"><b>交通</b><br>兩人各自ICOCA、實體SIM、Google Maps、USJ App、Visit Japan Web。</div>
- <div class="check"><b>穿著</b><br>止滑好走鞋、薄外套、防曬、補水；京都石板坡與USJ久站要顧腰。</div>
- <div class="check"><b>預約</b><br>Richmond訂單、USJ票券、京都和牛餐廳（若選）、海遊館時段（若選A）。</div>
-</div>
-<div class="day" style="margin-top:16px"><div class="dayhead"><h2>男朋友留言／想調整</h2></div><div class="timeline"><textarea id="note" placeholder="例如：我選海遊館版、京都想多留一點、哪間餐廳想換……"></textarea><p class="source">選擇與留言會存在這台手機瀏覽器。按下「用 LINE 傳回」會把結果整理成文字。</p></div></div>
-<details class="accordion"><summary>資料來源與提醒</summary><div><p>交通資訊以南海電鐵、Richmond Hotel、Osaka Metro、USJ等官方資料為主要依據。Rapi:t 關西機場—難波最快約34分鐘；Airport Express約45分鐘；Richmond官方標示大國町站步行約5分鐘。USJ開園與表演時刻會調整，行程內未寫死尚未公告的9/30最終時刻。</p><p class="source">本頁為旅行規劃版本，實際月台、票價、店家休息日與交通延誤以當日官方資訊及Google Maps為準。</p></div></details>
-</section>
-</main>
-<div class="footer-action"><button class="topbtn" onclick="location.hash='top'">回頂端</button><button class="savebtn" onclick="saveAll()">儲存</button><button class="linebtn" onclick="shareLine()">用 LINE 傳回</button></div>
-<script>
-const tabs=document.querySelectorAll('.tab[data-plan]');tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.plan').forEach(x=>x.classList.remove('active'));document.getElementById('plan-'+btn.dataset.plan).classList.add('active');localStorage.setItem('osakaPlanTab',btn.dataset.plan)}));
-const savedTab=localStorage.getItem('osakaPlanTab');if(savedTab){document.querySelector('.tab[data-plan="'+savedTab+'"]')?.click()}
-let selected=localStorage.getItem('osakaDay4')||'';document.querySelectorAll('.choose').forEach(btn=>{if(btn.dataset.choice===selected)btn.classList.add('active');btn.addEventListener('click',()=>{document.querySelectorAll('.choose').forEach(x=>x.classList.remove('active'));btn.classList.add('active');selected=btn.dataset.choice;localStorage.setItem('osakaDay4',selected)})});
-const note=document.getElementById('note');note.value=localStorage.getItem('osakaNote')||'';
-function saveAll(){localStorage.setItem('osakaNote',note.value);localStorage.setItem('osakaDay4',selected);alert('已儲存在這台裝置');}
-function shareLine(){saveAll();const text=`大阪京都4天3夜行程選擇\n住宿：Richmond Hotel Namba Daikokucho\nDAY 1：海鮮＋日本橋動漫街＋道頓堀\nDAY 2：USJ\nDAY 3：京都＋暗殺教室場景\nDAY 4：${selected||'尚未選擇'}\n留言：${note.value||'沒有留言'}`;location.href='https://line.me/R/msg/text/?'+encodeURIComponent(text)}
-</script>
-</body></html>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff1dc"/><stop offset="50%" stop-color="#ffe6ef"/><stop offset="100%" stop-color="#eef0ff"/></linearGradient></defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect x="60" y="58" width="530" height="304" rx="26" fill="#fff" opacity="0.62"/>
+  <rect x="638" y="68" width="494" height="285" rx="30" fill="#fff" opacity="0.55"/>
+  <path d="M162 220h270" stroke="#d98a7a" stroke-width="12" stroke-linecap="round"/>
+  <rect x="180" y="150" width="110" height="100" rx="14" fill="#e28b61"/>
+  <rect x="195" y="165" width="80" height="70" rx="10" fill="#fff1dc"/>
+  <rect x="330" y="155" width="120" height="95" rx="18" fill="#6aa0d8"/>
+  <circle cx="360" cy="252" r="16" fill="#444"/><circle cx="423" cy="252" r="16" fill="#444"/>
+  <rect x="168" y="120" width="16" height="52" fill="#8f4e46"/>
+  <rect x="286" y="120" width="16" height="52" fill="#8f4e46"/>
+  <rect x="168" y="116" width="134" height="12" fill="#6b4f44"/>
+  <text x="96" y="326" font-size="48" font-weight="700" fill="#5a4957">DAY 4B｜街道版</text>
+  <text x="96" y="360" font-size="27" fill="#715f6f">住吉大社・阪堺電車・新世界復古街景</text>
+  <text x="668" y="184" font-size="74" font-weight="700" fill="#c16556">OSAKA STREET</text>
+  <text x="668" y="228" font-size="28" fill="#6f6272">神社 × 路面電車 × 昭和感街道</text>
+  <rect x="686" y="258" width="150" height="58" rx="18" fill="#c97a64"/>
+  <rect x="856" y="258" width="150" height="58" rx="18" fill="#6f9ed3"/>
+  <text x="723" y="296" font-size="25" fill="#fff">住吉大社</text>
+  <text x="893" y="296" font-size="25" fill="#fff">阪堺電車</text>
+</svg>
